@@ -1,0 +1,343 @@
+*, :before, :after {
+    box-sizing: border-box
+}
+
+html {
+    -moz-tab-size: 4;
+    tab-size: 4
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #000;
+    color: #faebd7;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between
+}
+
+#relative-parent[data-v-c4de8e2e] {
+    position: relative;
+    min-width: 5px;
+    width: min-content;
+    display: inline-block
+}
+
+#size-calibration[data-v-c4de8e2e] {
+    visibility: hidden;
+    white-space: pre
+}
+
+#autosized-input[data-v-c4de8e2e] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    color: #dcdcdc;
+    outline: none;
+    border: none;
+    top: 0;
+    margin-left: 3px;
+    margin-right: 3px
+}
+
+#size-calibration[data-v-c4de8e2e], #autosized-input[data-v-c4de8e2e] {
+    padding: 0
+}
+
+.settings[data-v-e85b02e8] {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
+}
+
+.settings .x[data-v-e85b02e8] {
+    padding-left: 6px
+}
+
+.settings > div[data-v-e85b02e8] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 10px;
+    height: 20px
+}
+
+.settings select[data-v-e85b02e8], .settings button[data-v-e85b02e8] {
+    height: 20px
+}
+
+.settings .close[data-v-e85b02e8] {
+    cursor: pointer;
+    margin: 0 -15px 0 0;
+    padding: 10px
+}
+
+.result[data-v-e85b02e8] {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh !important
+}
+
+.colorPicker[data-v-e2de7e42] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap
+}
+
+.colorPicker .color[data-v-e2de7e42] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px
+}
+
+.colorPicker .value[data-v-e2de7e42] {
+    margin-left: 7px
+}
+
+.crop[data-v-a40c1603] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
+}
+
+.crop .x[data-v-a40c1603] {
+    padding-left: 6px
+}
+
+.crop > div[data-v-a40c1603] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 10px;
+    height: 20px
+}
+
+.crop select[data-v-a40c1603], .crop button[data-v-a40c1603] {
+    height: 20px
+}
+
+.censored[data-v-e74608ae] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
+}
+
+.censored .x[data-v-e74608ae] {
+    padding-left: 6px
+}
+
+.censored > div[data-v-e74608ae] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 10px;
+    height: 20px
+}
+
+.censored select[data-v-e74608ae], .censored button[data-v-e74608ae] {
+    height: 20px
+}
+
+.text[data-v-8a9098b0] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
+}
+
+.text .x[data-v-8a9098b0] {
+    padding-left: 6px
+}
+
+.text > div[data-v-8a9098b0] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 10px;
+    height: 20px
+}
+
+.text select[data-v-8a9098b0], .text button[data-v-8a9098b0] {
+    height: 20px
+}
+
+.header {
+    background: #151515
+}
+
+.header .tools {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap
+}
+
+.header .tools .tool {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer
+}
+
+.header .tools .tool.active .icon {
+    border-radius: 6px;
+    background: #1da4e54f
+}
+
+.header .tools .tool .icon {
+    padding: 10px
+}
+
+.header .tools .tool .icon img {
+    width: 38px;
+    height: 38px
+}
+
+.header .tools .tool .name {
+    font-weight: 700;
+    font-size: small
+}
+
+.editor[data-v-69e11d6b] {
+    position: relative;
+    flex: 1
+}
+
+.editor .canvas[data-v-69e11d6b] {
+    width: 100%;
+    height: 100%
+}
+
+.editor .settings[data-v-69e11d6b] {
+    width: max-content;
+    font-size: small;
+    background: #151515;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.layers[data-v-c73897ac] {
+    border-left: 1px solid red;
+    width: 200px
+}
+
+.layers img[data-v-c73897ac] {
+    max-width: 50px
+}
+
+.horizontalScroll[data-v-ffdfae86] {
+    position: relative
+}
+
+.horizontalScroll .scroll[data-v-ffdfae86] {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-50px);
+    transform-origin: right top
+}
+
+.horizontalScroll .scroll[data-v-ffdfae86]::-webkit-scrollbar {
+    width: 0;
+    height: 0
+}
+
+.horizontalScroll .scroll[data-v-ffdfae86] div:first-child {
+    transform: rotate(90deg);
+    transform-origin: right top
+}
+
+.frames[data-v-98b80218] {
+    height: 75px;
+    background: #25252545;
+    padding: 10px 5px
+}
+
+.frames .frame[data-v-98b80218] {
+    opacity: .5
+}
+
+.frames .frame[data-v-98b80218]:hover {
+    opacity: .9;
+    cursor: pointer
+}
+
+.frames .frame.active[data-v-98b80218] {
+    opacity: 1
+}
+
+.upload .dragInfo[data-v-226be76c] {
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 700;
+    flex-direction: column
+}
+
+.upload .dragInfo img[data-v-226be76c] {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 5px
+}
+
+.upload .uploadSlot[data-v-226be76c] {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh
+}
+
+.info[data-v-0bb6ff57] {
+    background: #2f2f2f;
+    font-size: small;
+    padding: 10px
+}
+
+.container {
+    flex: 1;
+    display: flex
+}
